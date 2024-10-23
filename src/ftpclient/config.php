@@ -12,8 +12,6 @@
 return [
     // 默认连接, 默认为连接配置里面的localhost
     'default' => 'localhost',
-    // 临时文件目录
-    'temp_dir' => '',
     // 连接配置
     'connections' => [
         // 本机连接参数
@@ -36,6 +34,8 @@ return [
             'break_reconnect'   => false,
             // 断线重连标识
             'break_match_str'   => [],
+            // 本地临时文件目录
+            'temp_dir'          => '',
         ],
         // 其它主机连接参数
         'other' => [
